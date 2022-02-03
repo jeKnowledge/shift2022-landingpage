@@ -20,21 +20,11 @@ html{
 }
 
 body {
-    /*position: re;*/
-    /*width: 100%;
-    text-align: center;
-    /*background: linear-gradient(15.88deg, #B215C6 0%, #4B2AE0 100%);
-    background-image: url("./images/backgrounds/fundototal.jpg");
-    background-size: cover;
+    height:auto;
+    background-image: url("../images/backgrounds/fundo-landing-page.jpg");
+    background-size: cover !important;
     background-repeat: no-repeat;
-    overflow-x: hidden;*/
-
-    /*position: re;*/
-    width: 100%;
     overflow-x: hidden;
-    background-image: url("../images/backgrounds/fundoexp2.png");
-    /*text-align: center;*/
-    /*background: linear-gradient(15.88deg, #B215C6 0%, #4B2AE0 100%);*/
 }
 
 /*------------------------FIRST SECTION------------------------*/
@@ -62,7 +52,7 @@ body {
 
 #sectiontitle{
     display: flex;
-    height: 122vh;
+    height: 100vh;
     justify-content: center;
     flex-direction: column;
 }
@@ -113,7 +103,7 @@ body {
 /*------------------------SECOND SECTION------------------------*/
 #sectiontext{
     display: flex;
-    height: 122vh;
+    height: 100vh;
     width: 100%;
     justify-content: center;
     flex-direction: column;
@@ -200,7 +190,7 @@ body {
 
 /*------------------------THIRD SECTION------------------------*/
 #sectionvid{
-    height: 122vh;
+    height: 100vh;
     width:100%;
     display: flex;
     justify-content: center;
@@ -258,13 +248,70 @@ body {
 }
 
 
+/*------------------------FORTH SECTION------------------------*/
+#sectionpartners{
+    height: 100vh;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+#partners{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sectionpartners h2{
+
+    font-family: Poppins-bold, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 86px;
+    line-height: 129px;
+    /* identical to box height */
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-top: 0;
+    margin-bottom: 2%;
+}
+
+
+.partners-grid{
+    display:flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.partners-grid a .diamond{
+    width:25vw;
+    text-shadow: 0px 0px 100px rgba(103, 146, 255, 0.6);
+}
+
+.partners-grid a .gold{
+    width:25vw;
+    text-shadow: 0px 0px 100px #C3912F;
+}
+
+
+
+
+
+
 /*-------------------------------------------------------------------------------------------------*/
 
 
 /*---------------------------------- Mobile -------------------------------------------------------*/
 @media screen and (max-width: 1550px){
     body{
-        background-image: url("../images/backgrounds/fundoexp.png");
+        background-image: url("../images/backgrounds/fundo-landing-page.jpg");
     }
 }
 
@@ -272,7 +319,6 @@ body {
 @media screen and (max-width: 600px){
     body{
         background-image: url("../images/backgrounds/fundototalmobile.jpg");
-        background-size: cover;
     }
 
     
@@ -313,6 +359,14 @@ body {
 
     .vid video{
         width: 90%;
+    }
+
+    #sectionpartners h2{
+        font-size: 40px;
+    }
+
+    #sectiontitle h3{
+        font-size: 20px;
     }
 
     footer{
